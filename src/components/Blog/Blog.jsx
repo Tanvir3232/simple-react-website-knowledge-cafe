@@ -4,6 +4,7 @@ import { faBookBookmark, faBookmark, faCoffee } from '@fortawesome/free-solid-sv
 
 
 const Blog = (props) => {
+    const handleSpentTime = props.handleSpentTime;
     const { title, author_image, author_name, blog_image, published_date, read_time, id } = props.blog;
     return (
         <div className="card w-full bg-base-100 shadow-xl">
@@ -23,7 +24,7 @@ const Blog = (props) => {
             </div>
             <div className='p-8 text-left'>
                 <h1 className='text-4xl font-bold'>{title}</h1>
-                <button className="btn btn-link text-lg">Mark as read</button>
+                <button className="btn btn-link text-lg" onClick={()=>handleSpentTime(read_time)}>Mark as read</button>
             </div>
         </div>
     );
