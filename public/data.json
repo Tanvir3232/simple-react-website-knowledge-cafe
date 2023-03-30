@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "author_name": "Lenora Gaines",
+      "author_image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg",
+      "title": "Props vs state",
+      "blog_image": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg",
+      "read_time": 7,
+      "published_date": "17 May 2022"
+    },
+    {
+      "id": 2,
+      "author_name": "Sheila Wood",
+      "author_image": "https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg",
+      "title": "How does useState work",
+      "blog_image": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg",
+      "read_time": 13,
+      "published_date": "10 April 2022"
+    },
+    {
+      "id": 3,
+      "author_name": "Faulkner Bowen",
+      "author_image": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg",
+      "title": "Purpose of useEffect other than fetching data",
+      "blog_image": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg",
+      "read_time": 12,
+      "published_date": "12 June 2022"
+    },
+    {
+      "id": 4,
+      "author_name": "Morales Mcintyre",
+      "author_image": "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg",
+      "title": "How Does React work",
+      "blog_image": "https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg",
+      "read_time": 8,
+      "published_date": "19 Dec 2022"
+    }
+  ]
