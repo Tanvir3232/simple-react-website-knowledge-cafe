@@ -7,6 +7,7 @@ import Blogs from './components/Blogs/Blogs'
 import Bookmark from './components/Bookmark/Bookmark'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Question from './components/Question/Question'
 
 function App() {
   const [spentTime, setSpentTime] = useState(0);
@@ -76,6 +77,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Question></Question>
     </div>
   )
 }
