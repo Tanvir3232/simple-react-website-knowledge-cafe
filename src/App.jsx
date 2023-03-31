@@ -5,6 +5,8 @@ import './App.css'
 import Header from './components/Header/Header'
 import Blogs from './components/Blogs/Blogs'
 import Bookmark from './components/Bookmark/Bookmark'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [spentTime, setSpentTime] = useState(0);
@@ -28,7 +30,7 @@ function App() {
     if (previousBookmarked) {
       const checkDuplicate = previousBookmarked.find(pb=>pb === title);
       if(checkDuplicate){
-        alert("alrea");
+        toast("Already bookmarked this blog!");
         bookmarkList = [...previousBookmarked];
       }else{
         bookmarkList = [...previousBookmarked, title];
@@ -54,6 +56,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+      <ToastContainer />
       <main className='w-4/5 mx-auto flex justify-between my-5'>
         <div className='w-3/5 ml-8'>
           <Blogs
