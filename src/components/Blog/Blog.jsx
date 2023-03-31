@@ -5,6 +5,7 @@ import { faBookBookmark, faBookmark, faCoffee } from '@fortawesome/free-solid-sv
 
 const Blog = (props) => {
     const handleSpentTime = props.handleSpentTime;
+    const handleBookmark  = props.handleBookmark;
     const { title, author_image, author_name, blog_image, published_date, read_time, id } = props.blog;
     return (
         <div className="card w-full bg-base-100 shadow-xl">
@@ -18,7 +19,7 @@ const Blog = (props) => {
                     </div>
                 </div>
                 <div>
-                    <span>{read_time} min read  <FontAwesomeIcon className='text-3xl' icon={faBookmark}/></span>
+                    <span>{read_time} min read  <button onClick={()=>handleBookmark(title)}><FontAwesomeIcon className='text-3xl' icon={faBookmark}/></button></span>
                 </div>
 
             </div>

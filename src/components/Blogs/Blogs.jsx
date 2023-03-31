@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = ({handleSpentTime}) => {
-    const [blogs,setBlogs] = useState([]);
-    useEffect(()=>{
-        fetch('/data.json')
-        .then(res=>res.json())
-        .then(data=>setBlogs(data))
-    },[])
+const Blogs = ({handleSpentTime,handleBookmark,blogs}) => {
+   
     return (
         <div className='grid grid-cols-1 gap-8'>
             {
@@ -15,6 +10,7 @@ const Blogs = ({handleSpentTime}) => {
                    key={blog.id}
                    blog={blog}
                    handleSpentTime = {handleSpentTime}
+                   handleBookmark  = {handleBookmark}
                 ></Blog>)
             }
         </div>
