@@ -58,15 +58,15 @@ function App() {
     <div className="App">
       <Header></Header>
       <ToastContainer />
-      <main className='w-4/5 mx-auto flex justify-between my-5'>
-        <div className='w-3/5 ml-8'>
+      <main className='w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row lg:flex-row justify-between my-5'>
+        <div className='w-full md:w-3/5 lg:w-3/5 md:ml-8'>
           <Blogs
             handleSpentTime={handleSpentTime}
             handleBookmark={handleBookmark}
             blogs = {blogs}
           ></Blogs>
         </div>
-        <div className='w-2/5 pl-5'>
+        <div className='w-full md:w-3/5 lg:w-3/5 pl-5'>
           <h4 className='text-2xl card shadow-xl p-5 text-center bg-slate-200 text-blue-600 font-semibold'>Spent time on read : {spentTime ? spentTime : "0"} min</h4>
           <div className='card shadow-xl bg-slate-200 mt-6 p-5'>
             <h1 className='text-2xl font-semibold'>Bookmarked Blogs : {bookmark ? bookmark.length : "0"}</h1>
